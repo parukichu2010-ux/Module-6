@@ -22,14 +22,35 @@ To write a Python program to create a `Counter` class that can increment the val
 9. **End the program.**
 
 ---
-
 ### PROGRAM
 
 ```
+class Counter:
+    def __init__(self):
+        self.current = 0
 
+    def increment(self):
+        self.current += 1
+
+    def value(self):
+        return self.current
+
+    def reset(self):
+        self.current = 0
+
+counter = Counter()
+
+counter.increment()
+counter.increment()
+counter.increment()
+
+print(counter.value())
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/ea0ab937-b18e-4b43-923a-593e05b6bb96)
 
 
 ### RESULT
+Thus the python program to create a Counter class that can increment the value of a counter has been implemented successfully.
+
